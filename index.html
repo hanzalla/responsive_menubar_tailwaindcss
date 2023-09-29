@@ -1,36 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Taxi Menu Bar</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
+  </head>
 
-<body>
-    <div class="bg-gradient-to-l from-slate-500 text-white justify-between">
-        <div class="flex justify-between ">
-            <img class="h-12 w-24 mx-8 mb-2 mt-4 hover:cursor-pointer rounded-lg" src="./static/taxi.jpg" alt="taxi">
-        <div class="md:hidden group order-2 hover:cursor-pointer hover:bg-zinc-600 hover:text-zinc-300 hover:shadow-2xl w-14 h-12 mt-4 mr-6 text-center text-4xl border-2 border-zinc-600 bg-white text-zinc-600 rounded-xl">
-            &#9776;</div>
-            <div class=" text-black flex justify-center items-center capitalize mx-auto mt-16 md:mt-0">
-                <ul class="m-auto space-y-5 mt-4 mb-4 font-semibold font-serif group md:flex md:justify-center md:items-center md:space-x-20 md:space-y-0 md:m-auto">
-                    <li class="hover:text-zinc-950 hover:bg-zinc-300 md:hover:cursor-pointer shadow-lg p-2 text-center   md:border-orange-300 md:w-auto md:shadow-none rounded-lg hover:underline">home</li>
-                    <li class="hover:text-zinc-950 hover:bg-zinc-300 md:hover:cursor-pointer shadow-lg p-2 text-center  md:w-auto md:shadow-none rounded-lg hover:underline">Contact us</li>
-                    <li class="hover:text-zinc-950 hover:bg-zinc-300 md:hover:cursor-pointer shadow-lg p-2 text-center   md:border-orange-300 md:w-auto md:shadow-none rounded-lg hover:underline">about us</li>
-                    <li class="hover:text-zinc-950 hover:bg-zinc-300 md:hover:cursor-pointer shadow-lg p-2 text-center md:w-auto md:shadow-none rounded-lg over:underline">Partnership</li>
-                </ul>
-            </div>
-            <div class="-mr-12 md:mr-6 md:mt-4 border-2 md:opacity-100 opacity-0 border-stone-600 bg-slate-50 text-black rounded-lg  p-2 w-auto h-12 px-8">
-                <p>Login</p>
-            </div>
-        </div>
-        
+  <body>
+    <div class="bg-slate-400">
+      <nav class="flex mx-0 justify-between">
+        <img
+          class="cursor-pointer w-28 h-14 md:p-2 md:w-52 md:h-24 m-2 p-2 md:rounded-xl rounded-xl"
+          src="./static/taxi.jpg"
+          alt="logo"
+        />
+        <h1
+          class="m-4 md:opacity-0 font-serif font-semibold text-3xl hover:animate-bounce hover:text-zinc-300 duration-150 ease-in-out transition-transform rounded-xl border-2 border-black px-4 shadow-lg"
+        >
+          ☰
+        </h1>
+        <ul
+          class="md:flex md:justify-center md:items-center md:static md:space-x-6 opacity-100 absolute top-16 grid justify-items-center pb-5 space-y-4 bg-slate-400 w-screen font-serif font-normal capitalize"
+        >
+          <li
+            class="md:mt-4 hover:underline hover:text-lg hover:text-sky-200 hover:cursor-pointer duration-100 ease-in-out hover:border-b-2 px-6 py-4 flex"
+          >
+            home
+          </li>
+          <li
+            class="hover:underline hover:text-lg hover:text-sky-200 hover:cursor-pointer duration-100 ease-in-out hover:border-b-2 px-6 py-4 flex"
+          >
+            contact us
+          </li>
+          <li
+            class="hover:underline hover:text-lg hover:text-sky-200 hover:cursor-pointer duration-100 ease-in-out hover:border-b-2 px-6 py-4 flex"
+          >
+            about us
+          </li>
+          <li
+            class="hover:underline hover:text-lg hover:text-sky-200 hover:cursor-pointer duration-100 ease-in-out hover:border-b-2 px-6 py-4"
+          >
+            career
+          </li>
+          <li
+            class="hover:underline hover:text-lg hover:text-sky-200 hover:cursor-pointer duration-100 ease-in-out hover:border-b-2 px-6 py-4"
+          >
+            partnership
+          </li>
+          <li>
+            <button
+              type="button"
+              class="md:space-x-8 md:mr-[8rem] lg:ml-20 sm:space-x-2 border-2 px-12 py-4 rounded-xl text-zinc-100 capitalize hover:cursor-pointer hover:bg-zinc-100 hover:text-zinc-950 ease-in-out duration-500"
+            >
+              log-in
+            </button>
+          </li>
+        </ul>
+      </nav>
     </div>
-
-
-</body>
-
+  </body>
 </html>
